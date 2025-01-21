@@ -1,0 +1,22 @@
+print("Welcome to McDonalds Burgers!")
+print("My name is McAi and i would be taking your order")
+order=input("What would you like to order?Burger,Fries or Chicken:")
+drink=input("Would you like a drink ?Y or N:")
+desert=input("Would you like to order a desert?Y or N:")
+
+if order =="Burger":
+    bill=10
+elif order =="Fries":
+    bill=7
+elif order =="Chicken":
+    bill=14
+else:
+    print("You have entered the wrong input!")            
+
+if drink =="Y":
+    bill+=6
+
+if desert =="Y":
+    bill+=7
+
+print(f"That would total to:${bill}")
